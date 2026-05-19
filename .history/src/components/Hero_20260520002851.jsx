@@ -15,21 +15,21 @@ export default function Hero() {
           alt="Stadium Background"
           className="w-full h-full object-cover opacity-35"
         />
-        {/* Gradient overlays - Mobile optimized */}
+        {/* Gradient overlays */}
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(to right, rgba(5,5,5,0.98) 0%, rgba(5,5,5,0.85) 35%, rgba(5,5,5,0.65) 60%, rgba(5,5,5,0.92) 100%)',
+              'linear-gradient(to right, rgba(5,5,5,0.96) 0%, rgba(5,5,5,0.7) 38%, rgba(5,5,5,0.45) 62%, rgba(5,5,5,0.88) 100%)',
           }}
         />
         <div
-          className="absolute bottom-0 left-0 right-0 h-32 sm:h-48"
+          className="absolute bottom-0 left-0 right-0 h-48"
           style={{ background: 'linear-gradient(to top, #050505, transparent)' }}
         />
         <div
-          className="absolute top-0 left-0 right-0 h-24 sm:h-32"
-          style={{ background: 'linear-gradient(to bottom, rgba(5,5,5,0.7), transparent)' }}
+          className="absolute top-0 left-0 right-0 h-32"
+          style={{ background: 'linear-gradient(to bottom, rgba(5,5,5,0.6), transparent)' }}
         />
       </div>
 
@@ -37,13 +37,13 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Lines */}
         {[
-          { left: '28%', opacity: 0.25 },
-          { left: '50%', opacity: 0.1 },
-          { right: '22%', left: undefined, opacity: 0.15 },
+          { left: '28%', opacity: 0.55 },
+          { left: '50%', opacity: 0.25 },
+          { right: '22%', left: undefined, opacity: 0.35 },
         ].map((s, i) => (
           <div
             key={i}
-            className="hero-diagonal absolute hidden sm:block"
+            className="hero-diagonal absolute"
             style={{
               width: '1px',
               height: '140%',
@@ -56,19 +56,19 @@ export default function Hero() {
             }}
           />
         ))}
-        {/* Spotlight blobs - reduced opacity on mobile */}
+        {/* Spotlight blobs */}
         <div
-          className="spotlight absolute hidden sm:block"
-          style={{ width: '700px', height: '700px', top: '-150px', left: '-150px', opacity: 0.25 }}
+          className="spotlight absolute"
+          style={{ width: '700px', height: '700px', top: '-150px', left: '-150px', opacity: 0.45 }}
         />
         <div
           className="spotlight absolute"
-          style={{ width: '450px', height: '450px', top: '50%', right: '10%', transform: 'translateY(-50%)', opacity: 0.12 }}
+          style={{ width: '450px', height: '450px', top: '50%', right: '10%', transform: 'translateY(-50%)', opacity: 0.3 }}
         />
       </div>
 
-      {/* ── Floating gold particles - reduced on mobile ── */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden sm:block">
+      {/* ── Floating gold particles ── */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {[...Array(10)].map((_, i) => (
           <div
             key={i}

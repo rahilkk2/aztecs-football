@@ -36,8 +36,8 @@ export default function Features() {
       className="relative overflow-hidden"
       style={{
         background: 'linear-gradient(to bottom, #050505, #0c0c0c, #050505)',
-        paddingTop: 'clamp(3rem, 8vw, 6rem)',
-        paddingBottom: 'clamp(3rem, 8vw, 7rem)',
+        paddingTop: '6rem',
+        paddingBottom: '7rem',
       }}
     >
       {/* Gold accent lines */}
@@ -87,7 +87,7 @@ export default function Features() {
           {features.map(({ icon: Icon, title, desc }, i) => (
             <motion.div
               key={title}
-              className="premium-card glass-card rounded-2xl p-6 sm:p-7 md:p-9 text-center flex flex-col items-center gap-4 sm:gap-5 relative overflow-hidden"
+              className="premium-card glass-card rounded-2xl p-9 text-center flex flex-col items-center gap-5 relative overflow-hidden"
               initial={{ opacity: 0, y: 50 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: i * 0.12, ease: 'easeOut' }}

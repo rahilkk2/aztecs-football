@@ -121,8 +121,8 @@ export default function Programs() {
       className="relative overflow-hidden"
       style={{
         background: 'linear-gradient(to bottom, #060606, #0a0a0a, #060606)',
-        paddingTop: 'clamp(3rem, 8vw, 7rem)',
-        paddingBottom: 'clamp(3rem, 8vw, 7rem)',
+        paddingTop: '7rem',
+        paddingBottom: '7rem',
       }}
     >
       {/* Background spotlight */}

@@ -46,7 +46,7 @@ export default function Footer() {
       id="contact"
       style={{
         background: '#050505',
-        marginTop: 'clamp(4rem, 8vw, 8rem)',
+        marginTop: '8rem',
         position: 'relative',
         overflow: 'hidden',
       }}

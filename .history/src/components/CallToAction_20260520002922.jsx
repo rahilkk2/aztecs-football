@@ -17,7 +17,7 @@ export default function CallToAction() {
       ref={ref}
       id="academy"
       className="relative overflow-hidden flex items-center"
-      style={{ minHeight: 'clamp(400px, 60vh, 600px)', paddingBottom: '2rem' }}
+      style={{ minHeight: '600px', paddingBottom: '2rem' }}
     >
       {/* ── Parallax BG ── */}
       <motion.div className="absolute inset-0 z-0" style={{ y: bgY }}>

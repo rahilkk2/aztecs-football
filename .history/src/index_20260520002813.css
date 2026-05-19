@@ -269,24 +269,20 @@ body {
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 2rem;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
+  gap: 2.5rem;
+  padding-top: 5rem;
+  padding-bottom: 4rem;
 }
 @media (min-width: 640px) {
   .footer-grid {
     grid-template-columns: repeat(2, 1fr);
-    gap: 2.5rem;
-    padding-top: 4rem;
-    padding-bottom: 3rem;
+    gap: 3rem;
   }
 }
 @media (min-width: 1024px) {
   .footer-grid {
     grid-template-columns: repeat(4, 1fr);
     gap: 3.5rem;
-    padding-top: 5rem;
-    padding-bottom: 4rem;
   }
 }
 

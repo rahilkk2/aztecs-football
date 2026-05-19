@@ -37,7 +37,7 @@ const programs = [
 function ProgramCard({ icon: Icon, title, age, desc, delay }) {
   return (
     <motion.div
-      className="premium-card glass-card rounded-2xl p-6 sm:p-7 md:p-10 text-center flex flex-col items-center gap-4 sm:gap-5 md:gap-6 h-full relative overflow-hidden cursor-pointer"
+      className="premium-card glass-card rounded-2xl p-10 text-center flex flex-col items-center gap-6 h-full relative overflow-hidden cursor-pointer"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
@@ -121,8 +121,8 @@ export default function Programs() {
       className="relative overflow-hidden"
       style={{
         background: 'linear-gradient(to bottom, #060606, #0a0a0a, #060606)',
-        paddingTop: 'clamp(3rem, 8vw, 7rem)',
-        paddingBottom: 'clamp(3rem, 8vw, 7rem)',
+        paddingTop: '7rem',
+        paddingBottom: '7rem',
       }}
     >
       {/* Background spotlight */}

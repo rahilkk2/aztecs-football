@@ -67,8 +67,8 @@ export default function Hero() {
         />
       </div>
 
-      {/* ── Floating gold particles - reduced on mobile ── */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden sm:block">
+      {/* ── Floating gold particles ── */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {[...Array(10)].map((_, i) => (
           <div
             key={i}

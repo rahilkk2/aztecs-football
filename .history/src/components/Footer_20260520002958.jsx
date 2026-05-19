@@ -46,7 +46,7 @@ export default function Footer() {
       id="contact"
       style={{
         background: '#050505',
-        marginTop: 'clamp(4rem, 8vw, 8rem)',
+        marginTop: '8rem',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -234,25 +234,25 @@ export default function Footer() {
         <div
           style={{
             borderTop: '1px solid rgba(212,175,55,0.12)',
-            paddingTop: '1.5rem',
-            paddingBottom: '1.5rem',
+            paddingTop: '1.75rem',
+            paddingBottom: '1.75rem',
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
+            flexDirection: 'row',
+            alignItems: 'center',
             justifyContent: 'space-between',
-            gap: '1.5rem',
+            gap: '1rem',
             flexWrap: 'wrap',
           }}
         >
-          <p style={{ fontSize: '9px', letterSpacing: '1.5px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)' }}>
+          <p style={{ fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)' }}>
             © 2024 Aztecs Football Academy. All Rights Reserved.
           </p>
-          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '28px' }}>
             {['Privacy Policy', 'Terms of Use'].map((item) => (
               <button
                 key={item}
                 style={{
-                  fontSize: '9px', letterSpacing: '1.5px',
+                  fontSize: '10px', letterSpacing: '2px',
                   textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)',
                   background: 'none', border: 'none', cursor: 'pointer',
                   transition: 'color 0.3s',

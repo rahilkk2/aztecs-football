@@ -39,7 +39,7 @@ export default function About() {
       id="about"
       ref={ref}
       className="relative overflow-hidden"
-      style={{ background: '#050505', paddingTop: 'clamp(3rem, 8vw, 7rem)', paddingBottom: 'clamp(3rem, 8vw, 7rem)' }}
+      style={{ background: '#050505', paddingTop: '7rem', paddingBottom: '7rem' }}
     >
       {/* BG spotlight */}
       <div className="absolute inset-0 pointer-events-none">
@@ -59,14 +59,14 @@ export default function About() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.9, ease: 'easeOut' }}
           >
-            <div className="section-label mb-2 sm:mb-3">About Us</div>
-            <div className="gold-divider mb-5 sm:mb-7" />
+            <div className="section-label mb-3">About Us</div>
+            <div className="gold-divider mb-7" />
 
             <h2
-              className="leading-tight mb-6 sm:mb-7"
+              className="leading-tight mb-7"
               style={{
                 fontFamily: "'Bebas Neue', cursive",
-                fontSize: 'clamp(1.8rem, 5vw, 3.6rem)',
+                fontSize: 'clamp(2.4rem, 4vw, 3.6rem)',
                 lineHeight: 1.05,
                 color: '#fff',
               }}
@@ -81,10 +81,10 @@ export default function About() {
             </h2>
 
             <p
-              className="text-white/60 mb-7 sm:mb-10 leading-loose"
+              className="text-white/60 mb-10 leading-loose"
               style={{
                 fontFamily: "'Poppins', sans-serif",
-                fontSize: 'clamp(0.8rem, 2vw, 0.875rem)',
+                fontSize: '0.875rem',
                 lineHeight: '1.85',
                 maxWidth: '380px',
               }}

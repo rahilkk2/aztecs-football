@@ -39,7 +39,7 @@ export default function About() {
       id="about"
       ref={ref}
       className="relative overflow-hidden"
-      style={{ background: '#050505', paddingTop: 'clamp(3rem, 8vw, 7rem)', paddingBottom: 'clamp(3rem, 8vw, 7rem)' }}
+      style={{ background: '#050505', paddingTop: '7rem', paddingBottom: '7rem' }}
     >
       {/* BG spotlight */}
       <div className="absolute inset-0 pointer-events-none">

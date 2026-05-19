@@ -17,7 +17,7 @@ export default function CallToAction() {
       ref={ref}
       id="academy"
       className="relative overflow-hidden flex items-center"
-      style={{ minHeight: 'clamp(400px, 60vh, 600px)', paddingBottom: '2rem' }}
+      style={{ minHeight: '600px', paddingBottom: '2rem' }}
     >
       {/* ── Parallax BG ── */}
       <motion.div className="absolute inset-0 z-0" style={{ y: bgY }}>
@@ -77,12 +77,12 @@ export default function CallToAction() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 1, ease: 'easeOut' }}
           >
-            <div className="section-label mb-4 sm:mb-5">Join Us</div>
+            <div className="section-label mb-5">Join Us</div>
             <h2
-              className="leading-none mb-7 sm:mb-10"
+              className="leading-none mb-10"
               style={{
                 fontFamily: "'Bebas Neue', cursive",
-                fontSize: 'clamp(2rem, 7vw, 5.8rem)',
+                fontSize: 'clamp(3rem, 6vw, 5.8rem)',
                 lineHeight: 0.98,
                 color: '#fff',
               }}
@@ -101,7 +101,7 @@ export default function CallToAction() {
               </span>
             </h2>
             <motion.button
-              className="btn-gold inline-flex items-center gap-2 sm:gap-3 px-8 sm:px-11 py-3 sm:py-4 text-xs sm:text-xs rounded-sm group"
+              className="btn-gold inline-flex items-center gap-3 px-11 py-4 text-xs rounded-sm group"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.97 }}
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}

@@ -37,13 +37,13 @@ export default function Hero() {
       <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {/* Lines */}
         {[
-          { left: '28%', opacity: 0.25 },
-          { left: '50%', opacity: 0.1 },
-          { right: '22%', left: undefined, opacity: 0.15 },
+          { left: '28%', opacity: 0.55 },
+          { left: '50%', opacity: 0.25 },
+          { right: '22%', left: undefined, opacity: 0.35 },
         ].map((s, i) => (
           <div
             key={i}
-            className="hero-diagonal absolute hidden sm:block"
+            className="hero-diagonal absolute"
             style={{
               width: '1px',
               height: '140%',
@@ -67,8 +67,8 @@ export default function Hero() {
         />
       </div>
 
-      {/* ── Floating gold particles - reduced on mobile ── */}
-      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none hidden sm:block">
+      {/* ── Floating gold particles ── */}
+      <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
         {[...Array(10)].map((_, i) => (
           <div
             key={i}

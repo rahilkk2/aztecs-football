@@ -36,8 +36,8 @@ export default function Features() {
       className="relative overflow-hidden"
       style={{
         background: 'linear-gradient(to bottom, #050505, #0c0c0c, #050505)',
-        paddingTop: 'clamp(3rem, 8vw, 6rem)',
-        paddingBottom: 'clamp(3rem, 8vw, 7rem)',
+        paddingTop: '6rem',
+        paddingBottom: '7rem',
       }}
     >
       {/* Gold accent lines */}

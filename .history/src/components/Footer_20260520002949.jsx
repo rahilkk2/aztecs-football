@@ -46,7 +46,7 @@ export default function Footer() {
       id="contact"
       style={{
         background: '#050505',
-        marginTop: 'clamp(4rem, 8vw, 8rem)',
+        marginTop: '8rem',
         position: 'relative',
         overflow: 'hidden',
       }}
@@ -72,12 +72,12 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div
-              style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '1.5rem', cursor: 'pointer' }}
+              style={{ display: 'flex', alignItems: 'center', gap: '14px', marginBottom: '1.5rem', cursor: 'pointer' }}
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <div
                 style={{
-                  width: '48px', height: '48px',
+                  width: '52px', height: '52px',
                   borderRadius: '50%', overflow: 'hidden',
                   border: '2px solid #d4af37',
                   boxShadow: '0 0 18px rgba(212,175,55,0.3)',
@@ -89,16 +89,16 @@ export default function Footer() {
                 <img src="/logo.png" alt="Aztecs Logo" style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
               </div>
               <div>
-                <div style={{ fontFamily: "'Bebas Neue', cursive", letterSpacing: '2.5px', color: '#fff', fontSize: '1.1rem', lineHeight: 1 }}>
+                <div style={{ fontFamily: "'Bebas Neue', cursive", letterSpacing: '3px', color: '#fff', fontSize: '1.4rem', lineHeight: 1 }}>
                   AZTECS
                 </div>
-                <div style={{ color: '#d4af37', fontSize: '8px', fontWeight: 700, letterSpacing: '2px', textTransform: 'uppercase', marginTop: '4px' }}>
+                <div style={{ color: '#d4af37', fontSize: '9px', fontWeight: 700, letterSpacing: '3px', textTransform: 'uppercase', marginTop: '4px' }}>
                   Football Academy
                 </div>
               </div>
             </div>
 
-            <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.75rem', color: 'rgba(255,255,255,0.45)', lineHeight: '1.8', maxWidth: '260px' }}>
+            <p style={{ fontFamily: "'Poppins', sans-serif", fontSize: '0.82rem', color: 'rgba(255,255,255,0.45)', lineHeight: '1.9', maxWidth: '260px' }}>
               Developing future champions through football excellence, discipline and passion. This is Aztecs.
             </p>
 
@@ -234,25 +234,25 @@ export default function Footer() {
         <div
           style={{
             borderTop: '1px solid rgba(212,175,55,0.12)',
-            paddingTop: '1.5rem',
-            paddingBottom: '1.5rem',
+            paddingTop: '1.75rem',
+            paddingBottom: '1.75rem',
             display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'flex-start',
+            flexDirection: 'row',
+            alignItems: 'center',
             justifyContent: 'space-between',
-            gap: '1.5rem',
+            gap: '1rem',
             flexWrap: 'wrap',
           }}
         >
-          <p style={{ fontSize: '9px', letterSpacing: '1.5px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)' }}>
+          <p style={{ fontSize: '10px', letterSpacing: '2px', textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)' }}>
             © 2024 Aztecs Football Academy. All Rights Reserved.
           </p>
-          <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+          <div style={{ display: 'flex', gap: '28px' }}>
             {['Privacy Policy', 'Terms of Use'].map((item) => (
               <button
                 key={item}
                 style={{
-                  fontSize: '9px', letterSpacing: '1.5px',
+                  fontSize: '10px', letterSpacing: '2px',
                   textTransform: 'uppercase', color: 'rgba(255,255,255,0.28)',
                   background: 'none', border: 'none', cursor: 'pointer',
                   transition: 'color 0.3s',

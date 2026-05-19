@@ -75,15 +75,15 @@ export default function Navbar() {
         </ul>
 
         {/* ── CTA + Hamburger ── */}
-        <div className="flex items-center gap-3 sm:gap-4 shrink-0">
+        <div className="flex items-center gap-4 shrink-0">
           <button
             onClick={() => handleNavClick('Contact')}
-            className="btn-gold hidden sm:block px-4 sm:px-6 py-2 sm:py-2.5 text-[9px] sm:text-[11px] rounded-sm tracking-widest"
+            className="btn-gold hidden sm:block px-6 py-2.5 text-[11px] rounded-sm tracking-widest"
           >
             JOIN NOW
           </button>
           <button
-            className="lg:hidden text-white hover:text-yellow-400 transition-colors p-2"
+            className="lg:hidden text-white hover:text-yellow-400 transition-colors p-1"
             onClick={() => setMenuOpen(!menuOpen)}
             aria-label="Toggle menu"
           >
@@ -95,22 +95,22 @@ export default function Navbar() {
       {/* ── Mobile Menu ── */}
       <div
         className={`lg:hidden transition-all duration-500 overflow-hidden ${
-          menuOpen ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0'
+          menuOpen ? 'max-h-[420px] opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="bg-black/98 border-t border-yellow-600/20 px-4 sm:px-6 py-5 flex flex-col gap-4">
+        <div className="bg-black/98 border-t border-yellow-600/20 px-6 py-6 flex flex-col gap-5">
           {navLinks.map((link) => (
             <button
               key={link}
               onClick={() => handleNavClick(link)}
-              className="text-white/70 hover:text-yellow-400 text-sm font-semibold tracking-[2px] uppercase text-left transition-colors py-2 border-b border-white/5 pb-3"
+              className="text-white/70 hover:text-yellow-400 text-sm font-semibold tracking-[2px] uppercase text-left transition-colors py-1 border-b border-white/5 pb-3"
             >
               {link}
             </button>
           ))}
           <button
             onClick={() => handleNavClick('Contact')}
-            className="btn-gold px-4 py-3 text-xs rounded-sm mt-2 w-full sm:w-fit tracking-widest"
+            className="btn-gold px-6 py-3 text-xs rounded-sm mt-1 w-fit tracking-widest"
           >
             JOIN NOW
           </button>
